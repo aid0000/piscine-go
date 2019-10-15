@@ -1,1 +1,1 @@
-echo "Hello aid0000!"ls -A --format=commas -m -t -p | tr -d ' '
+echo "Hello aid0000!" ls -A --format=commas -m -t -p | tr -d ' '
