@@ -1,30 +1,37 @@
 package piscine
 
 import (
-	"github.com/01-edu/z01"
+    "fmt"
+    "strconv"
 )
 
 func PrintComb2() {
-
-	for a := '0'; a <= '9'; a = a + 1 {
-		for b := '0'; b <= '9'; b = b + 1 {
-			d := b + 1
-			for c := a; c <= '9'; c = c + 1 {
-				for ; d <= '9'; d = d + 1 {
-					z01.PrintRune(a)
-					z01.PrintRune(b)
-					z01.PrintRune(' ')
-					z01.PrintRune(c)
-					z01.PrintRune(d)
-					if a < '9' || b < '8' || c < '9' || d < '9' {
-						z01.PrintRune(',')
-						z01.PrintRune(' ')
-					}
-
-				}
-				d = '0'
+	for i:=0; i<99; i++{ 
+    		for j:=i+1; j<100; j++{
+			if i == 0 && j == 1 {
+				fmt.Print("")
+			}else{
+				fmt.Print(", ")
 			}
-		}
-	}
-	z01.PrintRune('\n')
+			if i < 10 {
+				ch := strconv.Itoa(0)
+				ch += strconv.Itoa(i)
+				fmt.Print(ch," ")
+             		}else{
+				fmt.Print(i," ")
+			}
+			
+			if j < 10 {
+                                ch := strconv.Itoa(0)
+                                ch += strconv.Itoa(j)
+                                fmt.Print(ch)
+                        }else{ 
+                                fmt.Print(j)
+                        }
+			if i==98 && j== 99{
+				print("\n")
+			}
+			
+        	}
+    	}
 }
