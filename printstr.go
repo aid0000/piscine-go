@@ -1,6 +1,6 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func PrintStr(a string) {
 	for _, v := range a {
