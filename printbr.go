@@ -1,7 +1,7 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	fmt.Printf("%d", n)
+	z01.Printf("%d", n)
 }
