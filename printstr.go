@@ -4,6 +4,6 @@ import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
 	for _, := range str {
-		z01.PrintRune(10)
+		z01.PrintRune(r)
 	}
 }
