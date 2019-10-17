@@ -3,5 +3,5 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	z01.Printf("%d", n)
+	z01.PrintRune("%d", n)
 }
