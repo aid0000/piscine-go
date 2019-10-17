@@ -2,8 +2,8 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintStr(a string) {
-	for _, v := range a {
-		fmt.Print(string(v))
+func PrintStr(str string) {
+	for _, v := range str {
+		z01.PrintRune(10)
 	}
 }
