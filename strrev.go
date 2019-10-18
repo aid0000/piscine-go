@@ -7,12 +7,12 @@ func StrRev(s string) string {
 		a = index
 	}
 
-	wordInBytes := []byte(s)
-	j := 0
+	Word := []byte(s)
+	b := 0
 	for i := a; i >= 0; i-- {
-		wordInBytes[i] = byte(s[j])
-		j++
+		Word[i] = byte(s[b])
+		b++
 	}
-	FinalStr := string(wordInBytes)
-	return FinalStr
+	Final := string(Word)
+	return Final
 }
