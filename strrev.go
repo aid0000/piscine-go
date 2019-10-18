@@ -1,8 +1,18 @@
-package main
+package piscine
 
 func StrRev(s string) string {
-	for i := len(s) - 1; i >= 0; i-- {
-		as += string(s[i])
+	var a int
+
+	for index := range s {
+		a = index
 	}
-	return as
+
+	wordInBytes := []byte(s)
+	j := 0
+	for i := a; i >= 0; i-- {
+		wordInBytes[i] = byte(s[j])
+		j++
+	}
+	FinalStr := string(wordInBytes)
+	return FinalStr
 }
