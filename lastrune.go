@@ -1,10 +1,10 @@
 package piscine
 
-func NRune(s string, n int) rune {
-	for index, r := range []rune(s) {
-		if index+1 == n {
-			return r
-		}
+func LastRune(s string) rune {
+	runes := []rune(s)
+	var lastRune rune
+	for _, r := range runes {
+		lastRune = r
 	}
-	return '\x00'
+	return lastRune
 }
